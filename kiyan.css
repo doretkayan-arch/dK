@@ -1011,3 +1011,246 @@ blockquote p { font-family: var(--font-display); font-weight: 150; }
   .developer-credit .developer-mark { width: 31px; height: 31px; }
   .developer-credit:active .developer-mark { transform: rotate(-8deg) scale(.92); }
 }
+
+/* Readability pass v16: preserve the identity while strengthening small descriptive copy. */
+:root {
+  --copy-on-dark: rgba(249,251,245,.84);
+  --copy-on-light: rgba(9,45,49,.76);
+}
+
+.topbar .header-brand {
+  width: 414px;
+  min-width: 414px;
+}
+.topbar .header-brand .brand-copy {
+  grid-template-columns: 118px 174px;
+  width: 306px;
+}
+.topbar .header-descriptors {
+  width: 174px;
+}
+.topbar .header-descriptors small,
+.topbar .header-descriptors em {
+  width: 174px;
+  min-height: 30px;
+  color: rgba(249,251,245,.9);
+  font-size: 9.5px;
+  font-weight: 560;
+  line-height: 1.35;
+}
+.topbar .header-descriptors em { color: var(--lime-bright); }
+.topbar .header-descriptors small::before,
+.topbar .header-descriptors em::before {
+  font-size: 8px;
+  font-weight: 800;
+}
+
+.desktop-nav {
+  color: rgba(249,251,245,.82);
+  font-size: 13px;
+  font-weight: 500;
+}
+.hero-kicker,
+.eyebrow {
+  font-size: 12.5px;
+  font-weight: 650;
+  line-height: 1.6;
+}
+.hero-copy,
+.statement-copy {
+  font-size: 16px;
+  font-weight: 390;
+  line-height: 1.9;
+}
+.hero-copy { color: var(--copy-on-dark); }
+.statement-copy { color: var(--copy-on-light); }
+.hero-chips span {
+  color: rgba(249,251,245,.86);
+  font-size: 10.5px;
+  font-weight: 520;
+}
+.hero-meta span {
+  color: rgba(249,251,245,.72);
+  font-size: 10.5px;
+  font-weight: 480;
+  line-height: 1.55;
+}
+.scroll-note {
+  color: rgba(249,251,245,.66);
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.solution-gateway small {
+  color: rgba(249,251,245,.76);
+  font-size: 12px;
+  font-weight: 520;
+  line-height: 1.6;
+}
+.section-head > p,
+.service-group-head > p {
+  color: var(--copy-on-light);
+  font-size: 15px;
+  font-weight: 390;
+  line-height: 1.9;
+}
+.service-group-head > span {
+  font-size: 11.5px;
+  font-weight: 700;
+}
+.service-kicker {
+  font-size: 11.5px !important;
+  font-weight: 720 !important;
+  line-height: 1.6 !important;
+}
+.service .service-copy > p:not(.service-kicker) {
+  color: var(--copy-on-light);
+  font-size: 15px;
+  font-weight: 390;
+  line-height: 1.9;
+}
+.service-featured .service-copy > p:not(.service-kicker) {
+  color: var(--copy-on-dark);
+}
+.service .service-copy ul {
+  color: rgba(9,45,49,.79);
+  font-size: 13px;
+  font-weight: 430;
+  line-height: 1.85;
+}
+.service-featured .service-copy ul {
+  color: rgba(249,251,245,.82);
+}
+.service-link {
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.numbers-grid span {
+  font-size: 12.5px;
+  font-weight: 480;
+  line-height: 1.8;
+  opacity: .76;
+}
+.government-proof span {
+  color: rgba(6,30,34,.72);
+  font-size: 12px;
+  font-weight: 720;
+}
+.process-list p {
+  color: var(--copy-on-light);
+  font-size: 14px;
+  font-weight: 390;
+  line-height: 1.85;
+}
+.process-list li:hover p,
+.process-list li:active p {
+  color: rgba(249,251,245,.84);
+}
+.government-clients .client-logo-grid span {
+  color: rgba(249,251,245,.88);
+  font-size: 12px;
+  font-weight: 540;
+  line-height: 1.7;
+}
+
+.contact-foot {
+  color: rgba(249,251,245,.76);
+  font-size: 11px;
+  font-weight: 480;
+  line-height: 1.65;
+}
+.footer-contact > span,
+.footer-socials > span {
+  color: var(--lime-bright);
+  font-size: 10px;
+  font-weight: 700;
+}
+.footer-contact a,
+.footer-socials a {
+  color: rgba(249,251,245,.8);
+  font-size: 11px;
+  font-weight: 430;
+}
+.footer .brand-copy small,
+.footer .brand-copy em {
+  color: rgba(249,251,245,.82);
+  font-size: 10.5px;
+  font-weight: 500;
+  line-height: 1.45;
+}
+.footer .brand-copy em {
+  color: var(--lime-bright);
+  font-weight: 620;
+}
+.footer-socials a b {
+  font-size: 10.5px;
+  font-weight: 500;
+}
+.footer > small {
+  color: rgba(249,251,245,.62);
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+.developer-credit span {
+  color: rgba(249,251,245,.66);
+  font-size: 9.5px;
+  font-weight: 450;
+}
+
+@media (max-width:1180px) and (min-width:801px) {
+  .topbar .header-brand {
+    width: 245px;
+    min-width: 245px;
+  }
+  .topbar .header-brand .brand-copy {
+    grid-template-columns: 118px;
+    width: 128px;
+  }
+}
+
+@media (max-width:800px) {
+  .topbar .header-brand {
+    width: auto;
+    min-width: 0;
+  }
+  .topbar .header-brand .brand-copy {
+    width: 166px;
+  }
+  .topbar .header-descriptors {
+    width: auto;
+    gap: 3px;
+    margin-top: 6px;
+  }
+  .topbar .header-descriptors small,
+  .topbar .header-descriptors em {
+    width: auto;
+    min-height: 0;
+    color: rgba(249,251,245,.9);
+    font-size: 9px;
+    font-weight: 540;
+    line-height: 1.25;
+  }
+  .topbar .header-descriptors em { color: var(--lime-bright); }
+
+  .hero-copy,
+  .statement-copy,
+  .section-head > p,
+  .service-group-head > p,
+  .service .service-copy > p:not(.service-kicker) {
+    font-size: 15px;
+    line-height: 1.85;
+  }
+  .solution-gateway small { font-size: 11px; }
+  .service .service-copy ul { font-size: 12.5px; }
+  .process-list p { max-width: none; font-size: 13.5px; }
+  .government-clients .client-logo-grid span { font-size: 11px; }
+  .contact-foot { font-size: 10.5px; }
+}
+
+@media (max-width:360px) {
+  .topbar .header-brand .brand-copy { width: 146px; }
+  .topbar .header-descriptors small,
+  .topbar .header-descriptors em { font-size: 8.2px; }
+}
