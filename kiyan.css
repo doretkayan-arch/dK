@@ -1254,3 +1254,218 @@ blockquote p { font-family: var(--font-display); font-weight: 150; }
   .topbar .header-descriptors small,
   .topbar .header-descriptors em { font-size: 8.2px; }
 }
+
+
+/* Readability pass v17: larger desktop copy, signature labels, and proof numbers. */
+:root {
+  --copy-on-dark: rgba(249,251,245,.92);
+  --copy-on-light: rgba(9,45,49,.84);
+}
+
+@media (min-width:1181px) {
+  .topbar {
+    height: 130px;
+  }
+  .topbar .header-brand {
+    width: 462px;
+    min-width: 462px;
+    height: 100px;
+  }
+  .topbar .header-brand .brand-copy {
+    grid-template-columns: 118px 220px;
+    gap: 14px;
+    width: 352px;
+    height: 86px;
+  }
+  .topbar .header-descriptors {
+    width: 220px;
+    gap: 8px;
+  }
+  .topbar .header-descriptors small,
+  .topbar .header-descriptors em {
+    width: 220px;
+    min-height: 36px;
+    padding-inline: 10px 8px;
+    border-color: rgba(249,251,245,.23);
+    background: rgba(6,30,34,.62);
+    color: rgba(249,251,245,.98);
+    font-size: 12.25px;
+    font-weight: 650;
+    line-height: 1.4;
+  }
+  .topbar .header-descriptors em {
+    color: var(--lime-bright);
+    font-weight: 720;
+  }
+  .topbar .header-descriptors small::before,
+  .topbar .header-descriptors em::before {
+    width: 25px;
+    height: 21px;
+    flex-basis: 25px;
+    font-size: 9.5px;
+    font-weight: 850;
+  }
+}
+
+@media (min-width:801px) {
+  .desktop-nav {
+    font-size: 14px;
+    font-weight: 560;
+  }
+  .nav-cta {
+    font-size: 13px;
+    font-weight: 680;
+  }
+  .hero-kicker,
+  .eyebrow {
+    font-size: 14px;
+    font-weight: 720;
+    line-height: 1.65;
+  }
+  .hero-copy,
+  .statement-copy {
+    font-size: 18px;
+    font-weight: 430;
+    line-height: 1.9;
+  }
+  .hero-chips span {
+    font-size: 12px;
+    font-weight: 620;
+  }
+  .hero-meta {
+    gap: 58px;
+  }
+  .hero-meta div {
+    gap: 8px;
+  }
+  .hero-meta strong {
+    font-size: 38px;
+    font-weight: 520;
+    line-height: 1;
+  }
+  .hero-meta span {
+    color: rgba(249,251,245,.9);
+    font-size: 13.5px;
+    font-weight: 570;
+    line-height: 1.55;
+  }
+  .scroll-note {
+    color: rgba(249,251,245,.78);
+    font-size: 11.5px;
+    font-weight: 580;
+  }
+  .solution-gateway small {
+    font-size: 13.5px;
+    font-weight: 620;
+  }
+  .section-head > p,
+  .service-group-head > p {
+    font-size: 16.5px;
+    font-weight: 430;
+    line-height: 1.9;
+  }
+  .service-group-head > span,
+  .service-kicker {
+    font-size: 13.5px !important;
+    font-weight: 760 !important;
+  }
+  .service .service-copy > p:not(.service-kicker) {
+    font-size: 16.5px;
+    font-weight: 430;
+    line-height: 1.9;
+  }
+  .service .service-copy ul {
+    font-size: 14.5px;
+    font-weight: 480;
+    line-height: 1.9;
+  }
+  .service-link {
+    font-size: 13.5px;
+    font-weight: 700;
+  }
+  .numbers-grid span {
+    font-size: 14px;
+    font-weight: 560;
+    line-height: 1.75;
+    opacity: .86;
+  }
+  .government-proof span {
+    font-size: 13.5px;
+    font-weight: 760;
+  }
+  .government-proof p {
+    font-size: 16px;
+    font-weight: 430;
+    line-height: 1.9;
+  }
+  .process-list p {
+    font-size: 15.5px;
+    font-weight: 430;
+    line-height: 1.85;
+  }
+  .government-clients .client-logo-grid span {
+    font-size: 13.5px;
+    font-weight: 620;
+  }
+  .contact-actions a,
+  .whatsapp-float {
+    font-size: 13px;
+    font-weight: 650;
+  }
+  .contact-foot {
+    font-size: 12.5px;
+    font-weight: 540;
+  }
+  .footer-contact > span,
+  .footer-socials > span {
+    font-size: 11.5px;
+  }
+  .footer-contact a,
+  .footer-socials a,
+  .footer-socials a b {
+    font-size: 12.5px;
+    font-weight: 520;
+  }
+  .footer .brand-copy small,
+  .footer .brand-copy em {
+    font-size: 12px;
+    font-weight: 570;
+  }
+  .footer > small {
+    font-size: 11.5px;
+    font-weight: 450;
+  }
+  .developer-credit span {
+    font-size: 10.5px;
+    font-weight: 500;
+  }
+}
+
+@media (max-width:800px) {
+  .topbar .header-brand .brand-copy {
+    width: 172px;
+  }
+  .topbar .header-descriptors small,
+  .topbar .header-descriptors em {
+    font-size: 10px;
+    font-weight: 620;
+    line-height: 1.3;
+  }
+  .hero-meta strong {
+    font-size: 28px;
+    font-weight: 520;
+  }
+  .hero-meta span {
+    color: rgba(249,251,245,.84);
+    font-size: 11.5px;
+    font-weight: 540;
+  }
+}
+
+@media (max-width:360px) {
+  .topbar .header-brand .brand-copy { width: 150px; }
+  .topbar .header-descriptors small,
+  .topbar .header-descriptors em { font-size: 8.8px; }
+  .hero-meta strong { font-size: 25px; }
+  .hero-meta span { font-size: 10.5px; }
+}
